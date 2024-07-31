@@ -1,0 +1,27 @@
+# interface library for System.Drawing of Mono
+package: libgdiplus
+
+essential:
+  - libgdiplus_copyright
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libcairo2_libs # needs adding
+      - libexif12_libs # needs adding
+      - libfontconfig1_libs # needs adding
+      - libgif7
+      - libglib2.0-0t64 # needs adding
+      - libharfbuzz0b # needs adding
+      - libjpeg8_libs # needs adding
+      - libpango-1.0-0 # needs adding
+      - libpng16-16t64 # needs adding
+      - libtiff6_libs
+    contents:
+      /usr/lib/libgdiplus.so*:
+      /usr/lib/pkgconfig/libgdiplus.pc:
+
+  copyright:
+    contents:
+      /usr/share/doc/libgdiplus/copyright:

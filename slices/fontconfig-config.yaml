@@ -1,0 +1,17 @@
+# generic font configuration library - configuration
+package: fontconfig-config
+
+essential:
+  - fontconfig-config_copyright
+
+slices:
+  config:
+    contents:
+      /etc/fonts/fonts.conf:
+      /etc/fonts/conf.d/*.conf:
+      /usr/share/fontconfig/conf.avail/*:
+      /usr/share/xml/fontconfig/fonts.dtd:
+
+  copyright:
+    contents:
+      /usr/share/doc/fontconfig-config/copyright:

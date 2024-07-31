@@ -1,0 +1,20 @@
+# generic font configuration library - runtime
+package: libfontconfig1
+
+essential:
+  - libfontconfig1_copyright
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libexpat1_libs
+      - libfreetype6_libs
+      - fontconfig-config_config
+  #   contents:
+  #     /usr/lib/libgdiplus.so*:
+  #     /usr/lib/pkgconfig/libgdiplus.pc:
+
+  # copyright:
+  #   contents:
+  #     /usr/share/doc/libgdiplus/copyright:

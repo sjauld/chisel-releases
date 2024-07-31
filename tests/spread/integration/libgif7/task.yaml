@@ -1,0 +1,6 @@
+summary: Integration tests for libgif7
+
+execute: |
+  rootfs="$(install-slices libgif7_libs)"
+
+  test -f ${rootfs}/usr/lib/$(arch)-linux-gnu/libgif.so.7
