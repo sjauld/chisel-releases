@@ -8,15 +8,15 @@ slices:
   libs:
     essential:
       - libc6_libs
-      - libcairo2_libs # needs adding
-      - libexif12_libs # needs adding
-      - libfontconfig1_libs # needs adding
-      - libgif7
-      - libglib2.0-0t64 # needs adding
-      - libharfbuzz0b # needs adding
-      - libjpeg8_libs # needs adding
-      - libpango-1.0-0 # needs adding
-      - libpng16-16t64 # needs adding
+      - libcairo2_libs
+      # - libexif12_libs # needs adding
+      # - libfontconfig1_libs # needs adding
+      - libgif7_libs
+      # - libglib2.0-0t64_libs # needs adding
+      # - libharfbuzz0b_libs # needs adding
+      # - libjpeg-turebo8_libs # needs adding
+      # - libpango-1.0-0_libs # needs adding
+      - libpng16-16t64_libs
       - libtiff6_libs
     contents:
       /usr/lib/libgdiplus.so*:

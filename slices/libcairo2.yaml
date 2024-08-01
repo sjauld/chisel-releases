@@ -1,0 +1,26 @@
+# Cairo 2D vector graphics library
+package: libcairo2
+essential:
+  - libcairo2_copyright
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libfontconfig1_libs
+      - libfreetype6_libs
+      - libpixman-1-0_libs
+      - libpng16-16t64_libs
+      # - libx11-6_libs # needs adding
+      # - libxcb-render0_libs # needs adding
+      # - libxcb-shm0_libs # needs adding
+      # - libxcb1_libs # needs adding
+      # - libxext6_libs # needs adding
+      # - libxrender1_libs # needs adding
+      - zlib1g_libs
+    contents:
+      /usr/lib/*-linux-*/libcairo.so.2*:
+
+  copyright:
+    contents:
+      /usr/share/doc/libcairo2/copyright:

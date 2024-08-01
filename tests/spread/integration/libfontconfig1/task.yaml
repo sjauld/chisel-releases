@@ -1,0 +1,9 @@
+summary: Integration tests for libfontconfig1
+
+execute: |
+  rootfs="$(install-slices libfontconfig1_libs)"
+
+  apt install -y gcc
+  arch=$(gcc -dumpmachine)
+
+  test -f ${rootfs}/usr/lib/${arch}/libfontconfig.so.1

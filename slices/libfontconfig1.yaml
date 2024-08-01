@@ -11,10 +11,9 @@ slices:
       - libexpat1_libs
       - libfreetype6_libs
       - fontconfig-config_config
-  #   contents:
-  #     /usr/lib/libgdiplus.so*:
-  #     /usr/lib/pkgconfig/libgdiplus.pc:
+    contents:
+      /usr/lib/*-linux-*/libfontconfig.so.1*:
 
-  # copyright:
-  #   contents:
-  #     /usr/share/doc/libgdiplus/copyright:
+  copyright:
+    contents:
+      /usr/share/doc/libfontconfig1/copyright:

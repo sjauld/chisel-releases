@@ -1,0 +1,15 @@
+summary: Integration tests for cube2font
+
+execute: |
+  rootfs="$(install-slices cube2font_bins)"
+
+  apt install -y fonts-roboto-unhinted
+
+  ls /usr/share/fonts/
+  ls /usr/share/fonts/truetype/
+
+  cp /usr/share/fonts/truetype/roboto/unhinted/RobotoCondensed-Bold.ttf "${rootfs}/font.ttf"
+
+  chroot "$rootfs" cube2font font.ttf output 1 1 1 1 1 1 1 1
+
+  [[ $(head -n 2 "${rootfs}/output.cfg" | tail -n 1) == "font \"output\" \"<grey>output0.png\" 1 5" ]]

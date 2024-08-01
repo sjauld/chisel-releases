@@ -1,0 +1,17 @@
+# utility program for creating font bitmaps for Cube Engine games
+package: cube2font
+essential:
+  - cube2font_copyright
+
+slices:
+  bins:
+    essential:
+      - libc6_libs
+      - libfreetype6_libs
+      - zlib1g_libs
+    contents:
+      /usr/bin/cube2font:
+
+  copyright:
+    contents:
+      /usr/share/doc/cube2font/copyright:
